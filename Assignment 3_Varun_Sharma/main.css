@@ -1,0 +1,154 @@
+/*This file contains all the styles for both the pages Home and Contact Us  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Size of logo image*/
+.logo {
+  width: 8vw;
+  height: 7vh;
+  float: left;
+}
+
+.main {
+  margin: 2rem;
+}
+/* giving link's text a white color */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.headerDiv {
+  border: 1px solid #adb3ec;
+  border-radius: 5px;
+  padding-left: 1rem;
+}
+
+
+.headerTxt {
+  margin-left: 4rem;
+}
+
+.navDiv {
+  margin-top: 1rem;
+}
+/*background color of Navigation bar */
+
+.bckGrdClr {
+  background-color: #6e77c9;
+}
+
+
+.buttonHome {
+  margin-right: 2rem;
+}
+/*dividing area into two columns right and left*/
+.asideRight {
+  width: 30%;
+  float: right;
+  font-style: italic;
+}
+
+.asideLeft {
+  width: 70%;
+  float: left;
+  font-style: italic;
+}
+
+nav {
+  padding: 1rem 4rem 1rem 0;
+  text-align: end;
+}
+/* Button style given to Home and Contact Us links*/
+button {
+  width: 8rem;
+  max-width: 10rem;
+  height: 2rem;
+  border: none;
+  background: #6e77c9;
+  border-radius: 5px;
+  color: #fff;
+}
+/*setting size and position for Home page image */
+.divImgOne {
+  max-width: 100%;
+  width: 97%;
+  height: 40%;
+  margin-bottom: 2rem;
+  border: 15px solid #eadfdf;
+  border-radius: 5px;
+}
+
+.imgDiv {
+  margin-bottom: 2rem;
+}
+/* style for caption */
+figcaption {
+  font-size: 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+
+ul {
+  list-style: none;
+}
+
+.centerAlignTxt {
+  text-align: center;
+}
+/*positioning footer at fixed bottom */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #6e77c9;
+  color: white;
+  height: 3rem;
+  padding: 1rem;
+}
+/* CONTACT US PAGE STYLING */ 
+.personalInfoHeading {
+  margin-left: calc(50% - 35px - 36px);
+  margin-top: 1rem;
+}
+/* BOX CONTAINER FOR FORM */
+.inputBox {
+  border: 1px solid #adb3ec;
+  margin: 0 10rem;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+label {
+  font-size: 0.8rem;
+}
+
+.inputCls,
+select {
+  width: 100%;
+  margin: 0.2rem 0;
+  height: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.submitBtn {
+  width: 14rem;
+  font-size: 0.8rem;
+  padding: 0.2rem 0;
+  height: 2rem;
+  border: none;
+  background: #6e77c9;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.marginBtm {
+  margin-bottom: 2rem;
+}
+
+.err {
+  font-size: 0.6rem;
+  color: red;
+}

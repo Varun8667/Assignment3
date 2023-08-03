@@ -1,0 +1,248 @@
+<html lang="en">
+  <!--Paras Rai | prai6469@conestogac.on.ca-->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Pattaya&family=Poppins&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Assignment-3|Paras Rai</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="headerDiv bckGrdClr">
+        <header>
+          <img
+            src="https://play-lh.googleusercontent.com/Fro4e_osoDhhrjgiZ_Y2C5FNXBMWvrb4rGpmkM1PDAcUPXeiAlPCq7NeaT4Q6NRUxRqo"
+            alt="logo"
+            class="logo"
+          />
+          <h1 class="headerTxt">My Assignment</h1>
+        </header>
+      </div>
+
+      <div class="headerDiv navDiv">
+        <nav>
+          <button class="buttonHome"><a href="index.html">Home</a></button>
+          <button>Contact Us</button>
+        </nav>
+      </div>
+
+      <div class="navDiv">
+        <div class="asideLeft">
+          <aside>
+            <h2 class="centerAlignTxt">Contact Us</h2>
+            <div class="personalInfoHeading">
+              <legend>Personal Information</legend>
+            </div>
+            <div class="inputBox">
+              <div>
+                <div>
+                  <label for="name">Name</label>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    id="name"
+                    class="inputCls"
+                    autofocus
+                    required
+                  />
+                </div>
+                <span id="nameErr" class="err"></span>
+              </div>
+
+              <div>
+                <div>
+                  <label for="email">Email</label>
+                </div>
+                <div>
+                  <input type="email" id="email" class="inputCls" required />
+                </div>
+                <span id="emailErr" class="err"></span>
+              </div>
+
+              <div>
+                <div>
+                  <label for="phoneNumber">Phone Number</label>
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    id="phoneNumber"
+                    class="inputCls"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <label for="dob">Date of Birth</label>
+                </div>
+                <div>
+                  <input type="date" id="dob" class="inputCls" required />
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <label for="emp">Employement status</label>
+                </div>
+                <div>
+                  <select name="emp" id="emp">
+                    <option value="0">Select Employement Status</option>
+                    <option value="1">Student</option>
+                    <option value="2">Employed Full-tim</option>
+                    <option value="3">Employed Part-time</option>
+                    <option value="4">Retired</option>
+                    <option value="5">Other</option>
+                  </select>
+                  <span id="empErr" class="err"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="personalInfoHeading">
+              <legend>How did you hear about our site?</legend>
+            </div>
+            <div class="inputBox">
+              <form>
+                <input
+                  type="radio"
+                  id="SocialMedia"
+                  name="site_info"
+                  value="Social Media"
+                />
+                <label for="SocialMedia">Social Media</label><br />
+                <input
+                  type="radio"
+                  id="Friend"
+                  name="site_info"
+                  value="Friend"
+                />
+                <label for="Friend">Friend</label><br />
+                <input
+                  type="radio"
+                  id="SearchEngine"
+                  name="site_info"
+                  value="Search Engine"
+                />
+                <label for="SearchEngine">Search Engine</label><br />
+                <input type="radio" id="Other" name="site_info" value="Other" />
+                <label for="Other">Other</label><br />
+              </form>
+              <span id="site_infoErr" class="err"></span>
+            </div>
+
+            <div class="personalInfoHeading">
+              <legend>Tell Us what you think!</legend>
+            </div>
+
+            <div class="inputBox">
+              <div>
+                <div>
+                  <label for="Comments">Comments</label>
+                </div>
+                <div>
+                  <textarea
+                    id="tellUs"
+                    name="tellUs"
+                    rows="4"
+                    cols="64"
+                  ></textarea>
+                </div>
+                <span id="tellUsErr" class="err"></span>
+              </div>
+            </div>
+
+            <div class="personalInfoHeading">
+              <legend>Submit!</legend>
+            </div>
+
+            <div class="inputBox marginBtm">
+              <div>
+                <label for="robot">I am not a robot</label>
+                <input type="checkbox" id="robot" name="site_info" />
+              </div>
+              <div class="navDiv">
+                <input
+                  type="submit"
+                  value="Clear"
+                  class="submitBtn"
+                  onclick="reset()"
+                />
+                <input
+                  type="submit"
+                  value="Submit"
+                  class="submitBtn"
+                  onclick="submit()"
+                />
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="asideRight">
+          <aside>
+            <h2 class="centerAlignTxt">List Heading</h2>
+            <ul>
+              <li>item 1</li>
+              <li>item 2</li>
+              <li>item 3</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          &copy; <span>2023</span>&nbsp;<span>Paras Rai  8866469 
+            
+          </span>
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script>
+    function submit() {
+      resetMsg();
+      if (document.getElementById("name").value === "") {
+        document.getElementById("nameErr").innerText = "Name is required";
+      }
+      if (document.getElementById("email").value === "") {
+        document.getElementById("emailErr").innerText = "Email is required";
+      }
+      if (document.getElementById("tellUs").value === "") {
+        document.getElementById("tellUsErr").innerText = "Response is required";
+      }
+      if (document.getElementById("emp").value === "0") {
+        document.getElementById("empErr").innerText =
+          "Employement status is required";
+      }
+      if (document.querySelector('input[name="site_info"]:checked') === null) {
+        document.getElementById("site_infoErr").innerText =
+          "Response is required";
+      }
+    }
+
+    function reset() {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("emp").value = "0";
+    }
+
+    function resetMsg() {
+      document.getElementById("nameErr").innerText = "";
+      document.getElementById("emailErr").innerText = "";
+      document.getElementById("tellUsErr").innerText = "";
+      document.getElementById("empErr").innerText = "";
+      document.getElementById("site_infoErr").innerText = "";
+    }
+  </script>
+</html>
